@@ -1,0 +1,113 @@
+h1 {
+    color: white;
+}
+
+#container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 1000px;
+}
+
+body {
+    background-color: green;
+}
+
+.cards {
+    width: 100px;
+    height: 150px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#up {
+    width: 700px;
+    height: 300px;
+    align-items: center;
+    align-self: center;
+}
+
+.upperCards img:nth-child(5) {
+    margin-left: 100px;
+}
+
+.upperCards {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+}
+
+#down {
+    align-items: center;
+    align-self: center;
+    width: 700px;
+    height: 1000px;
+}
+
+.downCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px;
+}
+
+.firstcolumn, .secondcolumn, .thirdcolumn, .fourthcolumn, .fifthcolumn, .sixthcolumn {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 400px;
+    width: 120px;
+    margin-right: 10px;
+}
+
+.firstcolumn .cards, .secondcolumn .cards, .thirdcolumn .cards, 
+.fourthcolumn .cards, .fifthcolumn .cards, .sixthcolumn .cards {
+    position: absolute;
+}
+
+.firstcolumn .cards:nth-child(1),
+.secondcolumn .cards:nth-child(1),
+.thirdcolumn .cards:nth-child(1),
+.fourthcolumn .cards:nth-child(1),
+.fifthcolumn .cards:nth-child(1),
+.sixthcolumn .cards:nth-child(1) {
+    top: 0px;
+}
+
+.secondcolumn .cards:nth-child(2),
+.thirdcolumn .cards:nth-child(2),
+.fourthcolumn .cards:nth-child(2),
+.fifthcolumn .cards:nth-child(2),
+.sixthcolumn .cards:nth-child(2) {
+    top: 10px;
+}
+
+
+.thirdcolumn .cards:nth-child(3),
+.fourthcolumn .cards:nth-child(3),
+.fifthcolumn .cards:nth-child(3),
+.sixthcolumn .cards:nth-child(3) {
+    top: 20px;
+}
+
+
+.fourthcolumn .cards:nth-child(4),
+.fifthcolumn .cards:nth-child(4),
+.sixthcolumn .cards:nth-child(4) {
+    top: 30px;
+}
+
+
+.fifthcolumn .cards:nth-child(5),
+.sixthcolumn .cards:nth-child(5) {
+    top: 40px;
+}
+
+.sixthcolumn .cards:nth-child(6) {
+    top: 50px;
+}
